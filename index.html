@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./assets/owl.carousel.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        >
+        <link href="./style.css" rel="stylesheet">
+        <link href="./assets/owl.carousel.css" rel="stylesheet">
+        <link href="./assets/owl.theme.css" rel="stylesheet">
+        <style>
+            /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+        </style>
+    </head>
+    <body>
+        <div class="">
+            <nav class="navbar  navbar-dark bg-dark fixed-top ">
+                <div class="container redapple-header-menu">
+                    <div class="header-nav-right header0menu">
+                        <a class="navbar-brand bg-dark " href="#">
+                            <div class="logo-red-outer">
+                                <img class="site-log-red" src="assets/Red Apple logo-07.png">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header-nav-left">
+                        <a class="header-menulinks" href="tel:+1 985 746 1203">Call Us: +1 985 746 1203</a>
+                        <a class="header-menulinks" href="">Location</a>
+                        <a class="header-menulinks" href="search for product">Search For Products</a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasDarkNavbar"
+                            aria-controls="offcanvasDarkNavbar"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div
+                        class="offcanvas offcanvas-end text-bg-dark"
+                        tabindex="-1"
+                        id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg secondnavbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#"></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        id="nav-icon1"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-end justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Disposables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Delta Pens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Delta Gummies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acessories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tanks & Coils</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Cigars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Glass Pipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Water Pipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hookah & Flavors</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="slider-images" src="./assets/Slider 1.png">
+                    <div class="container ">
+                        <div class="container-carsoluel-caption">
+                            <div class="container-carsoluel-caption">
+                                <div class="carousel-caption text-end">
+                                    <h2 class="carousel-text-header">
+                                        Disposables for your mood
+                                    </h2>
+                                    <!-- <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                            </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img class="slider-images" src="./assets/Slider 2.png">
+                    <div class="container">
+                        <div class="container-carsoluel-caption">
+                            <div class="carousel-caption text-end">
+                                <h2 class="carousel-text-header">Tyson Pre Rolls Now Available</h2>
+                                <!-- <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                            </p> -->
+                            </div>
+                            <div class="container-carsoluel-caption"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slider-images" src="./assets/Slider 3.png">
+                    <div class="container">
+                        <div class="container-carsoluel-caption">
+                            <div class="carousel-caption text-end">
+                                <h2 class="carousel-text-header">Make it elf, enjoy yourself</h2>
+                                <!-- <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                            </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="slider-images" src="./assets/Slider 4.png">
+                    <div class="container">
+                        <div class="container-carsoluel-caption">
+                            <div class="carousel-caption text-end">
+                                <h2 class="carousel-text-header">Elevate Your Vaping Game with Delta 8 Vapes!</h2>
+                                <!-- <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+                            </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+    </div>
+    <section class="container">
+        <div class="feature-header-home">
+            <div class="">
+                <h6 class="section-pre-tilte">Our Featured Products</h6>
+                <h2 class="seciton-text-header ">Best Seller</h2>
+            </div>
+        </div>
+        <div class="row " id="owl-demo" class="owl-carousel owl-theme d-flex carosule-container">
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="banner-3-item">
+        <div class="container">
+            <div class="grid-banner">
+                <div class="gallery__item--1 ">
+                    <img src="./assets/Slider 1.png" class="gallery__img" alt="Image 1">
+                </div>
+                <div class="gallery__item--2">
+                    <img src="./assets/Slider 2.png" class="gallery__img" alt="Image 1">
+                </div>
+                <div class="gallery__item--3">
+                    <img src="./assets/Slider 3.png" class="gallery__img" alt="Image 1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new-arribal-banner ">
+        <section class="container">
+            <div class="arrival-header-home">
+                <div class="">
+                    <h6 class="section-pre-tilte">Don’t Miss Our Newest Products</h6>
+                    <h2 class="seciton-text-header ">NEW ARRIVaLS</h2>
+                </div>
+            </div>
+            <div class="row mt-4 d-flex" id="new-arrival">
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+                <div class="card-feature-red-newarrival">
+                    <a href="" class="product-linkwrapper">
+                        <div class="cardimage-container">
+                            <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                        </div>
+                        <p class="productname-red">Dinner Lady Blackberry</p>
+                        <p class="productprice">
+                            <span class="red-dollor">$</span>
+                            22
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="container">
+        <div class="feature-header-home">
+            <div class="">
+                <h6 class="section-pre-tilte">Your Favorite Vaping Brands</h6>
+                <h2 class="seciton-text-header ">brands we sell</h2>
+            </div>
+        </div>
+        <div class="row " id="owl-demo-seller" class="owl-carousel owl-besstel owl-theme d-flex carosule-container">
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+            <div class="card-feature-red ">
+                <a href="" class="product-linkwrapper">
+                    <div class="cardimage-container">
+                        <img class="cardimage-container-img" src="./assets/prod01-1-min-copyright-500x598.jpg">
+                    </div>
+                    <p class="productname-red">Dinner Lady Blackberry</p>
+                    <p class="productprice">
+                        <span class="red-dollor">$</span>
+                        22
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-9  test-nomy-color ">
+                <div class="innerbuscs">
+                    <div class="testomo-header">
+                        <div class="">
+                            <h6 class="section-pre-tilte-testi">Customers Love Us</h6>
+                            <h2 class="seciton-text-header-small ">TESTIMONIALS</h2>
+                        </div>
+                        <div class="row " id="owl-demo-testi" class="owl-carousel owl-besstel owl-theme d-flex carosule-container">
+                            <div class="card-feature-red-testi ">
+                                <div class="product-linkwrapper mt-3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consec
+tetuer adipiscing elit, sed diam nonummipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, con
+                                    </p>
+                                    <p class="productname-red">Tony Adams, Killen</p>
+                                </div>
+                            </div>
+                            <div class="card-feature-red-testi ">
+                                <div class="product-linkwrapper mt-3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consec
+tetuer adipiscing elit, sed diam nonummipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, con
+                                    </p>
+                                    <p class="productname-red">Tony Adams, Killen</p>
+                                </div>
+                            </div>
+                            <div class="card-feature-red-testi ">
+                                <div class="product-linkwrapper mt-3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consec
+tetuer adipiscing elit, sed diam nonummipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, con
+                                    </p>
+                                    <p class="productname-red">Tony Adams, Killen</p>
+                                </div>
+                            </div>
+                            <div class="card-feature-red-testi ">
+                                <div class="product-linkwrapper mt-3">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, consec
+tetuer adipiscing elit, sed diam nonummipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy Lorem ipsum dolor sit amet, con
+                                    </p>
+                                    <p class="productname-red">Tony Adams, Killen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 subscriot">
+                <div>
+                    <h6 class="section-pre-tilte-testi">Never Miss Offers from us</h6>
+                    <h2 class="seciton-text-header-small-news ">Newsletter</h2>
+                </div>
+                <div>
+                    <form>
+                        <input class="newletter" type="text">
+                        <br>
+                        <button class="btn btn-secondary
+                        ">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-5">
+        <div class="feature-header-home">
+            <div class="">
+                <h6 class="section-pre-tilte">Find & Share on Instagram</h6>
+                <h2 class="seciton-text-header ">#Redapplesmokeshop</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer-readapple  bg-dark">
+    <div class="container  ">
+        <div class="col-md-6">
+            <div class="footer-containers0">
+                <div class="logo-container">
+                    <div class="footer-logo">
+                        <img src="./assets/flog.png">
+                    </div>
+                    <h5 class="footer-text-header">RED APPLE</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Products List</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Offers - Save With Us</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Blogs</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Our Locations</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Contact Us</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Careers</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Mission Statement</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Disposables</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Delta Pens</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Delta Gummies</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Acessories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Disposables</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Delta Pens</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Delta Gummies</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-muted">Acessories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="connect-withus">CONNECT WITH US</div>
+                <div>
+                    <form>
+                        <input class="newletter" type="text">
+                        <br>
+                        <button class="btn btn-secondary
+                        ">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+        $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+    //   autoPlay: 4000, //Set AutoPlay to 3 seconds
+ 
+      items : 5,
+  
+ 
+  });
+
+   $("#owl-demo-seller").owlCarousel({
+ 
+    //   autoPlay: 4000, //Set AutoPlay to 3 seconds
+ 
+      items : 5,
+  
+ 
+  });
+
+    $("#owl-demo-testi").owlCarousel({
+ 
+    //   autoPlay: 4000, //Set AutoPlay to 3 seconds
+ 
+      items : 1,
+  
+ 
+  });
+  
+ 
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
